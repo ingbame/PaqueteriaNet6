@@ -7,7 +7,8 @@ namespace Paqueteria.Rastreo.Web.Backend.Data
     {
         public PaqueteriaContext(DbContextOptions<PaqueteriaContext> options) : base(options) { }
 
-        public DbSet<Paquete> Paquetes { get; set; }
+        public DbSet<Sale> Sales { get; set; }
+        public DbSet<Package> Packages { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //Aqui se puede personalizar la creación de las tablas y las relaciones entre ellas
