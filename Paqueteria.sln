@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paqueteria.Rastreo.Web.Backend", "Paqueteria.Rastreo.Web.Backend\Paqueteria.Rastreo.Web.Backend.csproj", "{F7A050D0-839D-45B6-BD07-026403E6BD2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paqueteria.Rastreo.Web.Backend", "Paqueteria.Rastreo.Web.Backend\Paqueteria.Rastreo.Web.Backend.csproj", "{F7A050D0-839D-45B6-BD07-026403E6BD2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paqueteria.Rastreo.Entity", "Paqueteria.Rastreo.Entity\Paqueteria.Rastreo.Entity.csproj", "{701E5FB4-CB1F-4C93-BDD6-E8D7CD3E17EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paqueteria.Rastreo.Core", "Paqueteria.Rastreo.Core\Paqueteria.Rastreo.Core.csproj", "{CB776743-F4B6-41DB-93A4-568455296002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paqueteria.Rastreo.Data", "Paqueteria.Rastreo.Data\Paqueteria.Rastreo.Data.csproj", "{7178E6E0-A778-4536-B4A6-1205FF878AD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paqueteria.Rastreo.Utilities", "Paqueteria.Rastreo.Utilities\Paqueteria.Rastreo.Utilities.csproj", "{A6B220FA-CBFD-4B54-9B57-9CE847E526EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{F7A050D0-839D-45B6-BD07-026403E6BD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7A050D0-839D-45B6-BD07-026403E6BD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7A050D0-839D-45B6-BD07-026403E6BD2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{701E5FB4-CB1F-4C93-BDD6-E8D7CD3E17EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{701E5FB4-CB1F-4C93-BDD6-E8D7CD3E17EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{701E5FB4-CB1F-4C93-BDD6-E8D7CD3E17EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{701E5FB4-CB1F-4C93-BDD6-E8D7CD3E17EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB776743-F4B6-41DB-93A4-568455296002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB776743-F4B6-41DB-93A4-568455296002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB776743-F4B6-41DB-93A4-568455296002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB776743-F4B6-41DB-93A4-568455296002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7178E6E0-A778-4536-B4A6-1205FF878AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7178E6E0-A778-4536-B4A6-1205FF878AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7178E6E0-A778-4536-B4A6-1205FF878AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7178E6E0-A778-4536-B4A6-1205FF878AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B220FA-CBFD-4B54-9B57-9CE847E526EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B220FA-CBFD-4B54-9B57-9CE847E526EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B220FA-CBFD-4B54-9B57-9CE847E526EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B220FA-CBFD-4B54-9B57-9CE847E526EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
