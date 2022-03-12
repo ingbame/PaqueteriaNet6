@@ -26,7 +26,7 @@ builder.Services.AddSwaggerGen(c => {
         {
             Name = "ISC. Baruch Medina",
             Email = "ingbame@gmail.com",
-            Url = new System.Uri("https://github.com/ingbame/PaqueteriaNet6")
+            Url = new System.Uri("https://github.com/ingbame")
         }
     });
 });

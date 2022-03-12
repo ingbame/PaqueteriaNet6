@@ -23,6 +23,26 @@ namespace Paqueteria.Rastreo.Web.Backend.Controllers
                 return NotFound();
             return _sale;
         }
+        [HttpGet("Seguimiento/{Track}")]
+        public async Task<ActionResult> GetTrack(string Track)
+        {
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"https://api-eu.dhl.com/track/shipments?trackingNumber={Track}"),
+                Headers = {
+                    { "DHL-API-Key", "LJhPQQ1e1M7r3hVAtwpfQZGn83ISiGVK" },
+                },
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                //Console.WriteLine(body);
+                return Ok(body);
+            }
+        }
         [HttpGet]
         public async Task<IEnumerable<Sale>> GetSales()
         {
@@ -36,7 +56,7 @@ namespace Paqueteria.Rastreo.Web.Backend.Controllers
             await _context.Sales.AddAsync(_model);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetSale", new { id = _model.SaleId}, _model);
+            return CreatedAtAction("GetSale", new { id = _model.SaleId }, _model);
         }
         [HttpPut]
         public async Task<ActionResult<Sale>> PutSale(long id, Sale body)
@@ -61,7 +81,7 @@ namespace Paqueteria.Rastreo.Web.Backend.Controllers
         public async Task<ActionResult<Sale>> DeleteSale(long id)
         {
             var _sale = await _context.Sales.FindAsync(id);
-            if(_sale == null)
+            if (_sale == null)
                 return NotFound();
             _context.Sales.Remove(_sale);
             await _context.SaveChangesAsync();
